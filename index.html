@@ -18,8 +18,8 @@
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">Find your favourite movie</a>
                     </div>
-                      <form class="navbar-form navbar-left">
-                    </form>  
+                        <form class="navbar-form navbar-left">
+                        </form>  
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="nav navbar-nav">
                       </ul>
@@ -30,77 +30,76 @@
                 </div>
             </nav>
         </div>
-        <div id="content">
-<div class="container-fluid search">    
-  <div class="row content">
-      <br>
-      <br>
-   <div class="row">
-        <form data-toggle="validator" role="form">
-            <div class="form-group col-md-6">
-                <label for="inputYear" class="control-label">Seach movies by year</label>
-                <input type="number" class="form-control" placeholder="Search by year" id="byYear" data-minlength="4" data-error="This year is invalid" required>
-                <div class="help-block with-errors"> </div>
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="button" onclick="searchByYear();">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                </div>
-            </div>
-        </form>
-        <form data-toggle="validator" role="form">
-            <div class="form-group col-md-6">
-                <label for="input" class="control-label">Search movies by keyword</label>
-                <input type="text" class="form-control" placeholder="Search by keyword" id="byKeyword" required>
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="button" onclick="searchByKeyword();">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
+    <div id="content">
+        <div class="container-fluid search">    
+             <div class="row content">
+                <br>
+                <br>
+         <div class="row">
+            <form data-toggle="validator" role="form">
+                 <div class="form-group col-md-6">
+                    <label for="inputYear" class="control-label">Seach movies by year</label>
+                    <input type="number" class="form-control" placeholder="Search by year" id="byYear" data-minlength="4" data-error="This year is invalid" required>
+                    <div class="help-block with-errors"> </div>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" onclick="searchByYear();">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
                     </div>
-            </div>
-        </form>
-    </div>
-      <br>
-      <br>
+                </div>
+            </form>
+            <form data-toggle="validator" role="form">
+                <div class="form-group col-md-6">
+                    <label for="input" class="control-label">Search movies by keyword</label>
+                    <input type="text" class="form-control" placeholder="Search by keyword" id="byKeyword" required>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" onclick="searchByKeyword();">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                </div>
+            </form>
+        </div>
+            <br>
+            <br>
 
-  </div>
-</div>
-    
-    <div class="row">
-<div class="container-fluid content col-md-8">
-<br>
-<br>
-    
-    <h5 id="total_results"></h5>   
-    <br>
-    <!-- Left-aligned media object -->
-    <div id="results"> </div> 
-    <!-- Left-aligned media object -->
-
-</div>
-<div class="col-md-4"></div>
-    </div>
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title" id="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-              <p id="lang"></p>
-              <p id="release"></p>
-              <p id="descript"></p>
-              <p id="budget"></p>
-              <p id="revenue"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
         </div>
     </div>
-</div>    
+    
+    <div class="row">
+        <div class="container-fluid content col-md-8">
+            <br>
+            <br>
+            <h5 id="total_results"></h5>   
+            <br>
+            <!-- Left-aligned media object -->
+            <div id="results"> </div> 
+            <!-- Left-aligned media object -->
+
+        </div>
+        <div class="col-md-4"></div>
+            </div>
+            <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                    <p id="lang"></p>
+                    <p id="release"></p>
+                    <p id="descript"></p>
+                    <p id="budget"></p>
+                    <p id="revenue"></p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
    </div> 
         <div id="footer">
             <footer class="container-fluid text-center">
@@ -115,7 +114,7 @@
                 </ul>
                 </footer>
             <script type="text/javascript" src="js/script.js"></script>
-            </div>
+        </div>
 </div>
 </body>
 </html>
