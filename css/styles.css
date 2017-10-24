@@ -109,11 +109,15 @@
         padding-right: 15px;
         margin-bottom: 10px;
     }
+<<<<<<< HEAD:css/styles.css
 
+=======
+>>>>>>> cd653c9635e287b285d6727a1a70a93e1f23893a:styles.css
     #modal-title,
     #lang,
     #release{
         font-weight: bold;
+<<<<<<< HEAD:css/styles.css
     }
 
     #main-search label {
@@ -128,3 +132,12 @@
     #main-search button {
         display: inline-block;
     }
+=======
+    }
+
+.form-control {
+    width: 70%;
+}
+.input-group-btn {
+}
+>>>>>>> cd653c9635e287b285d6727a1a70a93e1f23893a:styles.css

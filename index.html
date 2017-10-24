@@ -17,6 +17,7 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">Find your favourite movie</a>
+<<<<<<< HEAD
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="nav navbar-nav">
@@ -53,6 +54,49 @@
                         <i class="glyphicon glyphicon-search"></i>
                     </button>
                 </div>
+=======
+                    </div>
+                        <form class="navbar-form navbar-left">
+                        </form>  
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                      <ul class="nav navbar-nav">
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    <div id="content">
+        <div class="container-fluid search">    
+             <div class="row content">
+                <br>
+                <br>
+         <div class="row">
+            <form data-toggle="validator" role="form">
+                 <div class="form-group col-md-6">
+                    <label for="inputYear" class="control-label">Seach movies by year</label>
+                    <input type="number" class="form-control" placeholder="Search by year" id="byYear" data-minlength="4" data-error="This year is invalid" required>
+                    <div class="help-block with-errors"> </div>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" onclick="searchByYear();">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                    </div>
+                </div>
+            </form>
+            <form data-toggle="validator" role="form">
+                <div class="form-group col-md-6">
+                    <label for="input" class="control-label">Search movies by keyword</label>
+                    <input type="text" class="form-control" placeholder="Search by keyword" id="byKeyword" required>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" onclick="searchByKeyword();">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                </div>
+>>>>>>> cd653c9635e287b285d6727a1a70a93e1f23893a
             </form>
         </div>
             <br>
@@ -65,8 +109,12 @@
         <div class="container-fluid content col-md-8">
             <br>
             <br>
+<<<<<<< HEAD
             <h5 id="total_results"></h5>
             <h5 id="total_pages"></h5>  
+=======
+            <h5 id="total_results"></h5>   
+>>>>>>> cd653c9635e287b285d6727a1a70a93e1f23893a
             <br>
             <!-- Left-aligned media object -->
             <div id="results"> </div> 
