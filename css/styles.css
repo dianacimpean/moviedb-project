@@ -1,10 +1,33 @@
-    html{
-   /* background-color: #f1f1f1; */
-    } 
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+    html {
+        height:100%;
+        margin:0;
+	    padding:0;
+    }
+    body {
+        height:100%;
+        margin:0;
+	    padding:0;
+    }
+
+    #wrapper {
+        min-height:100%;
+        position:relative;
+    }
+
+    #content {
+        padding-bottom:100px; /* Height of the footer element */
+    }
+    #footer {
+        width:100%;
+        height:100px;
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
+        margin-bottom: 0;
+        border-radius: 0;
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -12,29 +35,18 @@
         /*background-color: #f1f1f1;*/
         padding-left: 50px;
         padding-right: 50px;
-}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    .body {
-        color: #fff!important;
-    }
+    }   
     
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-      height:auto;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      padding: 1rem;
+        background-color: #555;
+        color: white;
+        padding: 15px;
+        height: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem; 
     }
 
     .pagination {
@@ -47,19 +59,12 @@
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
+
     .row.content {height:auto;} 
     }
-
-    .container-fluid.content {
-    /*background-color: #f1f1f1;*/
     
-    }
-    
-    #total_results {
+    #total_results,
+    #total_pages {
         padding-left: 20px;
     }
     
@@ -89,9 +94,11 @@
         padding-right: 8px;
         float: left;
     }
+
     .release_date {
         padding-left: 25px;
     }
+
     .vote_average {
         float: right;
         padding-right: 5px;
@@ -103,10 +110,21 @@
         margin-bottom: 10px;
     }
 
-/*
-    #byYear:invalid {
-        border: 1px solid red;
+    #modal-title,
+    #lang,
+    #release{
+        font-weight: bold;
     }
-*/
 
+    #main-search label {
+        display: block;
+    }
 
+    #main-search .form-control {
+        width: 70% !important;
+        display: inline-block;
+    }
+
+    #main-search button {
+        display: inline-block;
+    }
