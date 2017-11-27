@@ -64,7 +64,8 @@
     }
     
     #total_results,
-    #total_pages {
+    #total_pages,
+    #current_page{
         padding-left: 20px;
     }
     
@@ -112,6 +113,7 @@
 
     #modal-title,
     #lang,
+    #genres,
     #release{
         font-weight: bold;
     }
@@ -128,3 +130,8 @@
     #main-search button {
         display: inline-block;
     }
+
+    #previous,
+    #next {
+    color: black;
+}
