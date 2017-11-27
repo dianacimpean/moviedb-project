@@ -67,7 +67,9 @@
         <div class="container-fluid content col-md-8">
             <br>
             <br>
-            <h5 id="total_results"></h5> 
+            <h5 id="total_results"></h5>
+            <h5 id="total_pages"></h5>
+            <h5 id="current_page"></h5>
             <br>
             <!-- Left-aligned media object -->
             <div id="results"> </div> 
@@ -102,10 +104,14 @@
    </div> 
         <div id="footer">
             <footer class="container-fluid text-center">
-                <h5 id="total_pages"></h5> 
                 <ul class="pagination pagination-sm pager">     
+                    <li>
+                <button class="btn btn-default" id="previous" href="#" data-page="" onClick="handlePaginationItemClicked(this)"> « Previous </button>
+                        </li>
+                        <li>
+                <button class="btn btn-default" id="next" href="#" data-page="" onClick="handlePaginationItemClicked(this)"> » Next </button>
+                    </li>
 <!--
-                    
                     <li class="prev"><a href="#">Previous</a></li>
                     <li class="disabled"><a href="#">1</a></li>
                     <li class="active"><a href="#">2</a></li>
@@ -115,9 +121,9 @@
                     <li class="next"><a href="#">Next</a></li>
 -->
                 </ul>
-                <div id="pageNumbers">
+                <span id="total_pages"></span>
+<!--                <span><a id="nrmovies"></a></span>-->
                 
-                </div>
                 </footer>
             <script type="text/javascript" src="js/script.js">
                 
