@@ -205,7 +205,7 @@ var loadPagination = function (movieResults) {
         } else if (year == "" && title != "") {
             searchByTitle(movieResults.page);
         } else {
-            alert("Doar una dintre casute terbuie sa fie completata!");
+            alert("Please fill only one field!");
         }
     } else {
         $('#previous').attr('disabled', 'disabled');
@@ -214,7 +214,7 @@ var loadPagination = function (movieResults) {
         } else if (year == "" && title != "") {
             searchByTitle(movieResults.page);
         } else {
-            alert("Doar una dintre casute terbuie sa fie completata!");
+            alert("Please fill only one field!");
         }
     }
 
